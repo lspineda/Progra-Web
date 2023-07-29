@@ -1,0 +1,79 @@
+/* Estilos para la cabezera */
+.cabezera {
+    display: flex;
+    margin: 0 0 15px 135px;
+    text-align: center;
+    gap: 25px
+}
+
+.cabezera img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Contenedor Principal de la página */
+.contenedorPrincipal {
+    display: flex;
+    padding: 0;
+}
+
+/* Estilos para el SideBar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100%;
+    background-color: #f1f1f1;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Estilos para los enlaces del SideBar */
+.sidebar a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Estilos para los enlaces al pasar el cursor sobre ellos */
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+/* Agrega estilos a todos los elementos del del menú */
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    margin-left: 135px;
+}
+
+/* Agrega estilos a todos los elementos de las diferentes categorias del menú */
+.contenedorMenu {
+    display: flex;
+    padding: 15px;
+    margin-bottom: 15PX;
+}
+
+.platillos {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+.platillos label {
+    margin-bottom: 5px;
+}
+
+.imagen {
+    text-align: center;
+    justify-content: center;
+}
+
+.imagen img {
+    width: 150px;
+    height: 150px;
+}
