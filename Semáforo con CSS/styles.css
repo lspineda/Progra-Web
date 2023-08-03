@@ -1,0 +1,56 @@
+/* Estilos para la cabezera */
+.cabezera {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+    justify-content: center;
+    gap: 25px
+}
+
+.cabezera img {
+    width: 50px;
+    height: 50px;
+}
+
+.cabezera h1 {
+    font-size: 20px;
+}
+
+/* Contenedor Principal de la página */
+.contenedorPrincipal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    gap: 20px;
+}
+
+.semaforo {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    height: 290px;
+    align-items: center;
+    background-color: black;
+}
+
+.luzSemaforo {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+
+.rojo {
+    background-color: maroon;
+}
+
+.amarillo {
+    background-color: darkgoldenrod;
+}
+
+.verde {
+    background-color: darkgreen;
+}

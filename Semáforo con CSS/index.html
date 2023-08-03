@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo con CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Cabezera de la Página -->
+    <fieldset>
+        <legend>SEMÁFORO</legend>
+
+        <!-- Cabezera de la Página -->
+        <div class="cabezera" id="cabezera">
+            <img class="imagen" src="https://umg.edu.gt/assets/umg.png">
+            <h1>Luis Saray Pineda Orellana</h1>
+            <h1>1190-20-5987</h1>
+        </div>
+
+        <!-- Contiene el Cuerpo de la Página -->
+        <div class="contenedorPrincipal">
+            <div class="semaforo">
+                <div class="luzSemaforo rojo"></div>
+                <div class="luzSemaforo amarillo"></div>
+                <div class="luzSemaforo verde"></div>
+            </div>
+        </div>
+
+        <script>
+            // Obtener las luces del semáforo
+            const luzRoja = document.querySelector(".rojo");
+            const luzAmarilla = document.querySelector(".amarillo");
+            const luzVerde = document.querySelector(".verde");
+
+            // Función para cambiar el color de las luces
+            function cambiarLuces() {
+                setTimeout(function () {
+                    luzRoja.style.backgroundColor = "red";
+                }, 0);
+                setTimeout(function () {
+                    luzRoja.style.backgroundColor = "maroon";
+                }, 2000);
+                setTimeout(function () {
+                    luzAmarilla.style.backgroundColor = "yellow";
+                }, 2000);
+                setTimeout(function () {
+                    luzAmarilla.style.backgroundColor = "darkgoldenrod";
+                }, 4000);
+                setTimeout(function () {
+                    luzVerde.style.backgroundColor = "chartreuse";
+                }, 4000);
+                setTimeout(function () {
+                    luzVerde.style.backgroundColor = "darkgreen";
+                }, 6000);
+            }
+
+            // Función para cambiar las luces cada 10 segundos
+            function cambiarLucesPeriodicamente() {
+                setInterval(cambiarLuces, 6000); // 6000 milisegundos = 5 segundos
+            }
+
+            // Iniciar el cambio de luces al cargar la página
+            window.onload = cambiarLucesPeriodicamente;
+        </script>
+</body>
+
+</html>
