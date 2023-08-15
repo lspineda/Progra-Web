@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 /* Barra de navegación */
@@ -18,8 +19,9 @@ body {
     margin: 0 auto;
 }
 
-.logo img {
+.navbar img {
     height: 40px;
+    cursor: pointer;
 }
 
 .search-bar input {
@@ -40,18 +42,25 @@ body {
     font-weight: bold;
 }
 
+.user-menu {
+    display: flex;
+    padding-right: 10px;
+    gap: 20px;
+}
+
 /* Estilos para el contenido principal */
 main {
     display: flex;
     width: 100%;
-    margin: 20px auto;
+    height: 100%;
+    padding: 5px 20px;
 }
 
 /* Estilos para el SideBar */
 .sidebar {
     display: flex;
     flex-direction: column;
-    width: 8%;
+    width: 3%;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -63,6 +72,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 
 .sidebar .menu-item img {
@@ -76,17 +86,16 @@ main {
 
 .media-container {
     display: flex;
-    width: 92%;
-    padding: 5px 30px;
+    flex-wrap: wrap;
+    padding: 5px 40px;
     gap: 30px;
 }
 
 .video-container {
     display: flex;
-    width: 50%;
     flex-direction: column;
-    justify-content: center;
-    gap: 0px;
+    width: 32%;
+    gap: 10px;
     cursor: pointer;
 }
 
@@ -94,13 +103,34 @@ main {
     width: 100%;
     height: 300px;
     border-radius: 10px;
+    border: 1px solid black;
 }
 
-.video-container h1 {
+.video-details {
+    display: flex;
+    gap: 10px;
+}
+
+.video-details img {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+}
+
+.video-title {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}
+
+.video-container .video-details .video-title h1 {
     font-size: 20px;
+    margin: 0;
 }
 
-.video-container span {
+.video-container .video-details .video-title span {
     font-size: 15px;
     color: dimgray;
+    margin: 5px 0 0 0;
 }

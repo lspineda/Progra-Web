@@ -54,7 +54,7 @@ span {
 .item-historial {
     display: flex;
     background-color: #201c1c;
-    width: 280px;
+    width: 90%;
     height: 40px;
     padding: 5px 15px;
     margin: 20px 10px 10px 10px;
@@ -75,7 +75,7 @@ span {
 
 .navbar {
     display: flex;
-    height: 30px;
+    height: 8%;
     align-items: center;
     padding: 15px;
     border: 1px solid white;
@@ -85,9 +85,18 @@ span {
 .chat {
     display: flex;
     flex-direction: column;
-    height: 415px;
+    height: 84%;
     border-radius: 10px;
     border: 1px solid white;
+}
+
+.TextField {
+    height: 8%;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 25px;
 }
 
 .mensaje {
@@ -98,13 +107,5 @@ span {
     margin: 20px 10px 10px 10px;
     align-items: center;
     border: 1px solid gray;
-    border-radius: 10px;
-}
-
-.TextField {
-    height: 50px;
-    padding: 10px;
-    background-color: transparent;
-    border: 1px solid white;
     border-radius: 10px;
 }
