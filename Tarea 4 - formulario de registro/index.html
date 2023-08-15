@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registro de Alumnos</title>
+</head>
+
+<body>
+    <h1>REGISTRO DE ALUMNOS</h1>
+    <form id="registro-form">
+        <div class="centered-container">
+            <img src="https://umg.edu.gt/miumg/sesion_files/logo_white.png" alt="Image Not Found" class="logo-img">
+        </div>
+
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" required>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+
+        <label for="carne">Carné:</label>
+        <input type="text" id="carne" name="carne" required>
+
+        <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+
+        <label for="facultad">Facultad:</label>
+        <select id="facultad" name="facultad" required>
+            <option value="" disabled selected>Facultad a la que pertenece</option>
+            <option value="facultad1">Facultad de Arquitectura</option>
+            <option value="facultad2">Facultad de Enfermería</option>
+            <option value="facultad3">Facultad de Ingeniería en Sistemas</option>
+            <option value="facultad4">Facultad de Psicología</option>
+        </select>
+
+        <label for="datos-adicionales">Datos Adicionales:</label>
+        <textarea id="datos-adicionales" name="datos-adicionales" rows="4"></textarea>
+
+        <div class="centered-container">
+            <button type="submit">Registrar</button>
+        </div>
+    </form>
+</body>
+
+</html>
